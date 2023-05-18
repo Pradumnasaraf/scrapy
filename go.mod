@@ -1,4 +1,4 @@
-module github.com/Pradumnasaraf/Scrapy
+module github.com/Pradumnasaraf/scrapy
 
 go 1.20
 

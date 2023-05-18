@@ -3,7 +3,7 @@ package cmd
 import (
 	"os"
 
-	"github.com/Pradumnasaraf/Scrapy/cmd/ebay"
+	"github.com/Pradumnasaraf/scrapy/cmd/ebay"
 	"github.com/spf13/cobra"
 )
 
