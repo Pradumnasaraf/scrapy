@@ -7,6 +7,7 @@ import (
 	"strconv"
 	"strings"
 
+	"github.com/Pradumnasaraf/scrapy/helpers"
 	"github.com/PuerkitoBio/goquery"
 	"github.com/alexeyco/simpletable"
 )
@@ -23,7 +24,7 @@ func ebay(args []string, pages int) {
 
 	for currentPage <= totalPages {
 
-		url := "https://www.ebay.com/sch/i.html?_from=R40&_nkw="+ queryKeyword + "&_pgn=" + strconv.Itoa(totalPages)
+		url := "https://www.ebay.com/sch/i.html?_from=R40&_nkw=" + queryKeyword + "&_pgn=" + strconv.Itoa(totalPages)
 
 		res, err := getResponse(url)
 		if err != nil {
@@ -54,6 +55,8 @@ var indexNumber int = 1
 
 func ebayScrape(res *http.Response) {
 
+	defer res.Body.Close()
+
 	doc, err := goquery.NewDocumentFromReader(res.Body)
 	if err != nil {
 		log.Fatal(err)
@@ -68,16 +71,20 @@ func ebayScrape(res *http.Response) {
 			title = title[:80] + "..."
 		}
 
-		appendTableData(title, price, indexNumber)
+		price = helpers.Green(price)
+		indexString := helpers.Purple(strconv.Itoa(indexNumber))
+
+		appendTableData(title, price, indexString)
 		indexNumber++
+
 	})
 
 }
 
-func appendTableData(title, price string, indexNumber int) {
+func appendTableData(title, price, indexNumber string) {
 
 	cell := []*simpletable.Cell{
-		{Align: simpletable.AlignLeft, Text: strconv.Itoa(indexNumber)},
+		{Align: simpletable.AlignLeft, Text: indexNumber},
 		{Align: simpletable.AlignLeft, Text: title},
 		{Align: simpletable.AlignLeft, Text: price},
 	}
