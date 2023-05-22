@@ -10,7 +10,7 @@ var (
 
 // ebayCmd represents the ebay command
 var EbayCmd = &cobra.Command{
-	Use:   "ebay [flags]",
+	Use:   "ebay [search term] [flags]",
 	Short: "Get Product and Price from Ebay",
 	Args:  cobra.MinimumNArgs(1),
 	Run: func(cmd *cobra.Command, args []string) {
