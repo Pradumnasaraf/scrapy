@@ -14,9 +14,11 @@ import (
 
 var cells [][]*simpletable.Cell
 
-func techcrunch() {
+func techcrunch(category string) {
 
-	res, err := getResponse("https://techcrunch.com/")
+	fmt.Println("Searching for latest blogs on techcrunch....")
+
+	res, err := getResponse(category)
 	if err != nil {
 		log.Fatal(err)
 	}
@@ -88,15 +90,5 @@ func createTable() {
 	// Set the style
 	table.SetStyle(simpletable.StyleUnicode)
 	fmt.Println(table.String())
-
-}
-
-func getResponse(url string) (*http.Response, error) {
-
-	res, err := http.Get(url)
-	if err != nil {
-		return nil, err
-	}
-	return res, nil
 
 }
