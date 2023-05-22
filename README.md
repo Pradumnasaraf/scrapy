@@ -13,9 +13,9 @@ Once installed, you can use the `scrapy` CLI command. To confirm installation, t
 
 ## 📝 Usage
 
-```bash
+```
 Usage:
-  Scrapy [command]
+  scrapy [command] [Flags]
 
 Available Commands:
   ebay [query] Scrape Ebay products and their prices.
