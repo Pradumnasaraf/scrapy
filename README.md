@@ -9,18 +9,23 @@ Once installed, you can use the `scrapy` CLI command. To confirm installation, t
 ## ⭐️ Features
 
 - Scape Ebay products and their prices
+- Scrape TechCrunch articles in different categories
 
 ## 📝 Usage
 
-```
+```bash
 Usage:
   Scrapy [command]
 
 Available Commands:
-  ebay [args] [flag]         Scrape ebay.com
+  ebay [query] Scrape Ebay products and their prices.
+    ebay [query] --page [Number of pages]
+  tc          Scrape TechCrunch articles in different categories.
+    tc --category [Category name] 
 ```
 
 eg: `scrapy ebay "iphone 12 mini" --page 5`
+eg: `scrapy tc --category "startups"`
 
 ## 📜 License
 
