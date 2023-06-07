@@ -20,4 +20,3 @@ func Green(s string) string {
 func Purple(s string) string {
 	return fmt.Sprintf("%s%s%s", ColorPurple, s, ColorDefault)
 }
-	

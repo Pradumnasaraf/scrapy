@@ -1,6 +1,7 @@
 package cmd
 
 import (
+	"log"
 	"os"
 
 	"github.com/Pradumnasaraf/scrapy/cmd/ebay"
@@ -12,7 +13,10 @@ var rootCmd = &cobra.Command{
 	Use:   "scrapy [command] [flags]",
 	Short: "Scape the web from the command line",
 	Run: func(cmd *cobra.Command, args []string) {
-		cmd.Help()
+		err := cmd.Help()
+		if err != nil {
+			log.Fatal(err)
+		}
 	},
 }
 
