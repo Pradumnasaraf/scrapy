@@ -7,9 +7,9 @@ import (
 	"strconv"
 	"strings"
 
+	"github.com/Pradumnasaraf/scrapy/helpers"
 	"github.com/PuerkitoBio/goquery"
 	"github.com/alexeyco/simpletable"
-	"github.com/Pradumnasaraf/scrapy/helpers"
 )
 
 var cells [][]*simpletable.Cell
