@@ -11,7 +11,7 @@ import (
 
 var rootCmd = &cobra.Command{
 	Use:   "scrapy [command] [flags]",
-	Short: "Scape the web from the command line",
+	Short: "Scrape the web from the command line",
 	Run: func(cmd *cobra.Command, args []string) {
 		err := cmd.Help()
 		if err != nil {
