@@ -6,7 +6,7 @@ import (
 	"testing"
 )
 
-// TestRootCmd tests the root command (candy)
+// TestRootCmd tests the root command (scrapy)
 func TestRootCmd(t *testing.T) {
 
 	expectedOutput := "Scrape the web from the command line"
@@ -26,7 +26,7 @@ func TestRootCmd(t *testing.T) {
 
 }
 
-// TestRootCmdHelpFlag tests the root command (candy) with help flag
+// TestRootCmdHelpFlag tests the root command (scrapy) with the help flag
 func TestRootCmdHelpFlag(t *testing.T) {
 
 	expectedOutput := "Scrape the web from the command line"
