@@ -31,7 +31,7 @@ func techcrunch(category string) {
 
 func techCrunchScrape(res *http.Response) {
 
-	defer res.Body.Close()
+	defer func() { _ = res.Body.Close() }()
 
 	doc, err := goquery.NewDocumentFromReader(res.Body)
 	if err != nil {

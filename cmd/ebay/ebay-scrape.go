@@ -55,7 +55,7 @@ var indexNumber int = 1
 
 func ebayScrape(res *http.Response) {
 
-	defer res.Body.Close()
+	defer func() { _ = res.Body.Close() }()
 
 	doc, err := goquery.NewDocumentFromReader(res.Body)
 	if err != nil {
