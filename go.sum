@@ -1,7 +1,7 @@
 github.com/PuerkitoBio/goquery v1.14.0 h1:kfHPaR71dOh6TD4SS4g2bjN1MTYx8nUdLzb1xcJbiTU=
 github.com/PuerkitoBio/goquery v1.14.0/go.mod h1:XUxFiysSccNd2XFo0qKyhEzGlshiP21eN+7JgWvXWQc=
-github.com/alexeyco/simpletable v1.2.0 h1:EXGdPB/M3I/Kb7ymy9M64TCdtkKx8Gi4UfB3qNdY2uI=
-github.com/alexeyco/simpletable v1.2.0/go.mod h1:KHsFoVUetej/r1OLdOwmWYIsPVgqVL/9uXVuhSVlhlg=
+github.com/alexeyco/simpletable v1.2.1 h1:T1CE4D0WLY93zPQe1jDRXFf3SZe6UPmB1Jnhj4dGqpY=
+github.com/alexeyco/simpletable v1.2.1/go.mod h1:KHsFoVUetej/r1OLdOwmWYIsPVgqVL/9uXVuhSVlhlg=
 github.com/andybalholm/cascadia v1.3.5 h1:RLjq12WJy58dN6eCIQrz0bAGZkztHWsEPFxP53Y7Ms8=
 github.com/andybalholm/cascadia v1.3.5/go.mod h1:BLRmbRjpEtNKieZOCCvYj4RqN+KRA41GBe/5O+G93kM=
 github.com/clipperhouse/uax29/v2 v2.7.0 h1:+gs4oBZ2gPfVrKPthwbMzWZDaAFPGYK72F0NJv2v7Vk=

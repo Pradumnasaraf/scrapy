@@ -4,7 +4,7 @@ go 1.26.0
 
 require (
 	github.com/PuerkitoBio/goquery v1.14.0
-	github.com/alexeyco/simpletable v1.2.0
+	github.com/alexeyco/simpletable v1.2.1
 	github.com/spf13/cobra v1.10.2
 )
 
